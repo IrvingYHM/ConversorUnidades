@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "unidadOrigen",
+              "type": "TipoUnidad"
+            },
+            {
+              "name": "unidadDestino",
+              "type": "TipoUnidad"
+            },
+            {
+              "name": "valor",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertirUnidadIntent",
+          "samples": [
+            "Cuanto equivale {valor} {unidadOrigen} en {unidadDestino}",
+            "Cuánto es {valor} {unidadOrigen} en {unidadDestino} ",
+            "Convierte {valor} {unidadOrigen} a {unidadDestino}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "pies"
+              }
+            },
+            {
+              "name": {
+                "value": "pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "yardas"
+              }
+            },
+            {
+              "name": {
+                "value": "kilómetros"
+              }
+            },
+            {
+              "name": {
+                "value": "metros"
+              }
+            },
+            {
+              "name": {
+                "value": "centímetros"
+              }
+            }
+          ],
+          "name": "TipoUnidad"
+        }
+      ],
+      "invocationName": "conversor de unidades"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "unidadOrigen",
+              "type": "TipoUnidad"
+            },
+            {
+              "name": "unidadDestino",
+              "type": "TipoUnidad"
+            },
+            {
+              "name": "valor",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertirUnidadIntent",
+          "samples": [
+            "How much is {valor} {unidadOrigen} in {unidadDestino}",
+            "How much is {valor} {unidadOrigen} in {unidadDestino}",
+            "Convert {valor} {unidadOrigen} to {unidadDestino}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "feet"
+              }
+            },
+            {
+              "name": {
+                "value": "inches"
+              }
+            },
+            {
+              "name": {
+                "value": "yards"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometers"
+              }
+            },
+            {
+              "name": {
+                "value": "meters"
+              }
+            },
+            {
+              "name": {
+                "value": "centimeters"
+              }
+            }
+          ],
+          "name": "TipoUnidad"
+        }
+      ],
+      "invocationName": "unit converter"
+    }
+  }
+}
